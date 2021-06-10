@@ -1,0 +1,122 @@
+/* To position the title "Employee Details" in the same position
+at top even when the page goes down while scrolling, when the
+number of form entries increase */
+#title {
+  position: fixed;
+  width: 100%;
+  background-color: rgb(243, 149, 149); 
+  color: white;
+  text-align: center;
+  height: 80px;
+}
+/*Putting the form and table as an entity, and 
+some distance from the title element */
+.container {
+  padding: 100px 0px 10px 0px;
+}
+.employee-form {
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    width: 30%;
+    border: 3px solid lightgrey
+  }
+  
+  .employees-table {
+    /*border-style: solid;*/
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+     /*border: 3px solid lightslategray; */
+     /*padding: 10px; */
+  }
+  
+  body > table{
+    width: 80%;
+  }
+  
+  table{
+    border-collapse: collapse;
+  }
+  table.list{
+    width:100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even),table.list thead>tr {
+    background-color: #dddddd;
+  }
+  
+  input[type=text], input[type=number] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+     margin: 0px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form div.form-action-buttons{
+    text-align: right;
+  }
+  
+  a{
+    /*cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;*/
+    padding: 4px 12px 4px 12px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: solid black;
+    /*#04AA6D*/
+    /* Edit button in yellow for a medium level trigger to the eye */
+    background-color: yellow;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+  }
+  b{
+    padding: 4px 12px 4px 12px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    /*Red color to add as a danger/high level trigger*/
+    background-color: #e03c31;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+  }
+  a:hover span {
+    /*padding-right: 1px;*/
+  }
+  
+  label.validation-error{
+    color:   red;
+    margin-left: 5px;
+  }
+  
+  .hide{
+    display:none;
+  }
+  
